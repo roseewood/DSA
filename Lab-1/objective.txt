@@ -1,0 +1,10 @@
+Lab-1 (Algorithmic Design for Computer Application)
+
+Objective:
+
+---Problem-Solving Skills, Coding Proficiency, Understanding of Core Concepts---
+
+1) Algorithmic Basics
+2) Data Structures
+3) Recursion & Backtracking
+4) Problem-Solving
