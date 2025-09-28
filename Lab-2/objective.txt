@@ -15,3 +15,15 @@ i) Line 2 reads linked list elements
 i) Print the max element of the linked list
 Note: For linked list creation the elements are allowed to insert at the beginning only.
  
+-----//------
+
+2) Given a singly linked list representing the chain of lockers, where each node contains a secret code, and an integer 𝑁, write a program to find the value of the Nth locker from the end of the list. If N is greater than the total number of lockers (i.e., the length of the list), return -1.
+
+i) Input:
+- Line 1 reads the size of the linked list (Size must be greater than 0)
+- Line 2 reads linked list elements
+○ Line 3 reads nth element to be printed from the end (n must be greater than 0)
+
+ii) Output:
+- Print the nth element from the end of the linked list
+- Note: For linked list creation the elements are allowed to insert at the beginning only.
