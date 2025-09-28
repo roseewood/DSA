@@ -2,7 +2,7 @@ Lab-2 (Algorithmic Design for Computer Application)
 
 Objective:
 
-                                     ---Singly linked list ---
+ ---Singly linked list ---
 
 1) You are a treasure hunter exploring an ancient, mysterious cave filled with hidden treasures. As you venture deeper into the cave, you discover a series of locked chests arranged in a line, each containing a single golden coin. However, each coin has a different value, and you can only take the coin with the highest value.
 To help you decide which coin to take, you need to write a program that can traverse through the chests (represented as a singly linked list) and find the coin with the maximum value.
