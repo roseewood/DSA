@@ -1,1 +1,197 @@
 <h1 align="center">Data Structures and Algorithm</h1>
+<h1 align="center">Introduction</h1><br>
+
+<h1 align="center">What are Data Structures?</h1>
+
+<h2>Data</h2>
+<p>
+Data is information that has been translated or converted into binary digital form
+so that it can be efficiently processed or moved in computing systems.
+</p>
+
+<p>
+The term <strong>raw data</strong> refers to data in its most basic and unprocessed form.
+</p><br>
+
+<h1 align="center">Why Do We Need Data Structures?</h1>
+
+<ul>
+<li>Each data structure allows data to be stored differently.</li>
+<li>It enables efficient data search and retrieval.</li>
+<li>Specific data structures are chosen to solve specific problems.</li>
+<li>They help manage large amounts of data such as large databases and indexing services like hash tables.</li>
+</ul>
+
+<h2><b>Examples</b></h2>
+
+<h3>Linked List Data Structure</h3>
+<p>
+If we have a playlist with three songs, the second song plays after the first,
+and the third song plays after the second because all songs are linked as nodes in a linked list.
+</p>
+
+<h3>Stack Data Structure</h3>
+<p>
+In a stack of books, we must remove the topmost book before accessing the desired book.
+To add a new book, we place it on the top.
+It follows the <strong>LIFO (Last In, First Out)</strong> principle.
+</p>
+
+<h3>Queue Data Structure</h3>
+<p>
+Any traditional queue follows the <strong>FIFO (First In, First Out)</strong> principle.
+The first element inserted is the first one removed.
+</p>
+
+<h3>Graph Data Structure</h3>
+<p>
+Google Maps works like a graph where locations are connected and multiple paths exist.
+Algorithms can be used to find the shortest path.
+</p>
+
+<h3>Array Data Structure</h3>
+<p>
+If searching for the word “simplilearn” in a dictionary, we look under the letter “s”.
+Arrays allow indexed and ordered access.
+</p>
+
+<h1 align="center">Types of Data Structures</h1><br>
+
+<h2>1. Linear Data Structure</h2>
+<p>
+Elements are arranged sequentially one after another.
+They are simple to implement because the order is fixed.
+</p>
+
+<h3>Array Data Structure</h3>
+<ul>
+<li>Elements are stored in continuous memory locations.</li>
+<li>All elements are of the same data type.</li>
+<li>The data type is predefined by the program.</li>
+</ul>
+
+<h3>Linked List Data Structure</h3>
+<ul>
+<li>Data elements are connected using nodes.</li>
+<li>Each node contains data and the address of the next node.</li>
+</ul>
+
+<h3>Stack Data Structure</h3>
+<ul>
+<li>Follows LIFO (Last In, First Out) principle.</li>
+<li>Operations occur at one end called the top.</li>
+</ul>
+
+<h3>Queue Data Structure</h3>
+<ul>
+<li>Follows FIFO (First In, First Out) principle.</li>
+<li>Insertion and deletion occur at opposite ends.</li>
+</ul>
+
+<h2>2. Non-Linear Data Structures</h2>
+<p>
+Elements are not arranged sequentially.
+They are organized hierarchically or interconnected.
+</p>
+
+<h3>Tree Data Structure</h3>
+<ul>
+<li>The top node is called the <strong>root</strong>.</li>
+<li>Each node can have zero or more children.</li>
+<li>Nodes with no children are called <strong>leaves</strong>.</li>
+<li>Each child has exactly one parent except the root.</li>
+</ul>
+
+<h3>Graph Data Structure</h3>
+<ul>
+<li>Consists of nodes (vertices) and edges.</li>
+<li>Can be directed or undirected.</li>
+<li>Can be weighted or unweighted.</li>
+<li>Can be cyclic or acyclic.</li>
+<li>Can be connected or disconnected.</li>
+</ul><br>
+
+<h1 align="center">Importance</h1>
+
+<ul>
+<li>Widely used in almost every aspect of computer science.</li>
+<li>Used in AI, graphics, big data, and operating systems.</li>
+<li>Essential component of algorithms.</li>
+<li>Proper selection improves program efficiency.</li>
+</ul><br>
+
+<h1 align="center">Time Complexity</h1>
+
+<p>
+Time Complexity is the amount of time an algorithm takes to run as a function of input size.
+It shows how execution time changes as input size increases or decreases.
+</p>
+
+<h2 align="center">Types of Time Complexity</h2>
+
+<h2>1. Constant Time — O(1)</h4>
+<p>Execution time does not depend on input size.</p>
+
+<h2>2. Linear Time — O(n)</h2>
+<p>Execution time increases linearly with input size.</p>
+
+<h2>3. Logarithmic Time — O(log n)</h2>
+<p>Input size is reduced in each step. Example: Binary Search.</p>
+
+<h2>4. Quadratic Time — O(n²)</h2>
+<p>Execution time grows non-linearly, commonly seen in nested loops.</p><br>
+
+<h2 align="center">How to Evaluate Time Complexity</h2>
+
+<pre>
+Total time taken = n + 5
+Total complexity = O(n + 5)
+                = O(n)
+</pre><br>
+
+<h2 align="center">Time Complexity of Common Algorithms</h2><br>
+
+<table align="center">
+<tr>
+<th>Algorithm</th>
+<th>Best Case</th>
+<th>Worst Case</th>
+</tr>
+
+<tr>
+<td>Insertion Sort</td>
+<td>O(n)</td>
+<td>O(n²)</td>
+</tr>
+
+<tr>
+<td>Merge Sort</td>
+<td>O(n log n)</td>
+<td>O(n log n)</td>
+</tr>
+
+<tr>
+<td>Quick Sort</td>
+<td>O(n log n)</td>
+<td>O(n²)</td>
+</tr>
+
+<tr>
+<td>Bubble Sort</td>
+<td>O(n)</td>
+<td>O(n²)</td>
+</tr>
+
+<tr>
+<td>Linear Search</td>
+<td>O(1)</td>
+<td>O(n)</td>
+</tr>
+
+<tr>
+<td>Binary Search</td>
+<td>O(1)</td>
+<td>O(log n)</td>
+</tr>
+
+</table>
