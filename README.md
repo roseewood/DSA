@@ -116,7 +116,7 @@ They are simple to implement because the order is fixed.
 </ul><br>
 
 <pre>
-    Insertion ↘v
+    Insertion ↘
                 ┌─┐ ┌─┐ ┌─┐
                 │5│ │7│ │4│
                 └─┘ └─┘ └─┘
@@ -199,7 +199,21 @@ main()
 </pre>
 
 <h2>2. Linear Time — O(n)</h2>
-<p>Execution time increases linearly with input size.</p>
+<p><i>Execution time increases linearly with input size.</i><br>
+When running time of an algorithm rises linearly with the length of the inpu, it is said to have linear time complexity.
+</p><br>
+
+<pre>
+main(){
+    int a [5] = {2,3,5,7,9}:
+    printf("elements of a = \n");
+    for(int i = 0; i<5; i++>);
+    printf("a= %D", a);
+
+}
+
+<b>Note:</b><i>When a function checks all the values in an input data set, it is said to have Time complexity of order 0(n)</i>
+</pre>
 
 <h2>3. Logarithmic Time — O(log n)</h2>
 <p>Input size is reduced in each step. Example: Binary Search.</p>
