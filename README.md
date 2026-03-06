@@ -256,7 +256,27 @@ for (int i = 0; i<n; i++>);
 <h2 align="center">How to Evaluate Time Complexity</h2>
 
 <pre>
+    int fib (int n)
+    {
+        
+        int f[n+2];                         +1
+        int i;                              +1
+        f[0]= 0;                            +1
+        f[1]= 1;                            +1
 
+
+        for (i =2; i<=n; i++ );
+        {
+            f[1] = f[i-1] + f[i-2];         +n
+                                         
+        }
+
+
+        return f[n];                         +1
+
+
+
+    }
 </pre><br>
 
 <pre>
