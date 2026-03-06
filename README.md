@@ -194,4 +194,12 @@ Total complexity = O(n + 5)
 <td>O(log n)</td>
 </tr>
 
-</table>
+</table><br>
+
+<h1 align="center">Conclusion</h1>
+
+<ul>
+<li>The time of the execution increases with the type of operations we make using the inputs.</li><br>
+<li>The lessler the time complexity, the faster the execution.</li><br>
+<li>In case if a code is 1000s of lines then it takes a toll on processor of the PC. So, it is important to check and reduce the time complexity as we can.</li>
+</ul>
