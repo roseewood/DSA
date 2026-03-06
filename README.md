@@ -212,7 +212,7 @@ main(){
 
 }
 
-<b>Note:</b><i>When a function checks all the values in an input data set, it is said to have Time complexity of order 0(n)</i>
+<b>Note:</b><i>When a function checks all the values in an input data set,<br> it is said to have Time complexity of order 0(n)</i>
 </pre>
 
 <h2>3. Logarithmic Time — O(log n)</h2>
@@ -256,12 +256,16 @@ for (int i = 0; i<n; i++>);
 <h2 align="center">How to Evaluate Time Complexity</h2>
 
 <pre>
+
+</pre><br>
+
+<pre>
 Total time taken = n + 5
 Total complexity = O(n + 5)
                 = O(n)
 </pre><br>
 
-<h2 align="center">Time Complexity of Common Algorithms</h2><br>
+<h2 align="center">Time Complexity of Algorithms</h2><br>
 
 <table align="center">
 <tr>
