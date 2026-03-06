@@ -176,13 +176,27 @@ They are organized hierarchically or interconnected.
 
 <p>
 Time Complexity is the amount of time an algorithm takes to run as a function of input size.
-It shows how execution time changes as input size increases or decreases.
+The length of the input determines how many operations the algorithms will do.<br>
+It will provide information about the variance ( increase or decrease) in execution time as the no. of operations in an algorithm increases or decreases.
 </p>
 
 <h2 align="center">Types of Time Complexity</h2>
 
 <h2>1. Constant Time — O(1)</h4>
-<p>Execution time does not depend on input size.</p>
+<p><i>Execution time does not depend on input size.</i><br>
+When an algorithm is not reliant on the input sixe n, it is said to have constant time with order 0(1).<br>
+The run time will always be same regardless of input size (n)</p><br>
+
+<pre>
+main()
+{
+    int a;
+    print ("Enter value of a = ");
+    scanf("%d", &a);
+    printf("a = %d", a);
+}
+
+</pre>
 
 <h2>2. Linear Time — O(n)</h2>
 <p>Execution time increases linearly with input size.</p>
