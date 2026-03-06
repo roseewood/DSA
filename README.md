@@ -236,7 +236,22 @@ int binary Search (int arr[], int 1, int r, int x){
 </pre>
 
 <h2>4. Quadratic Time — O(n²)</h2>
-<p>Execution time grows non-linearly, commonly seen in nested loops.</p><br>
+<p><i>Execution time grows non-linearly, commonly seen in nested loops.</i><br>
+When the execution time of an algorithm rises non-lineaerly (n square) with thelength of the input, it is said to have a quadratic time complexity.<br>
+In general, nested loops fall into the quadratic time complexity order, ewhere one loop takes 0(n) and if the function contains  loops inside loops, it takes<br>
+0(n) * 0(n) = 0(n square)
+</p><br>
+
+<pre>
+for (int i = 0; i<n; i++>);
+{
+    for (int j=0; j<n;j++>);
+    { 
+        printf("%d", arr[i][j])'
+    }
+}
+
+</pre>
 
 <h2 align="center">How to Evaluate Time Complexity</h2>
 
