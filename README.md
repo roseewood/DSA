@@ -205,7 +205,7 @@ When running time of an algorithm rises linearly with the length of the inpu, it
 
 <pre>
 main(){
-    int a [5] = {2,3,5,7,9}:
+    int a [5] = {2,3,5,7,9};
     printf("elements of a = \n");
     for(int i = 0; i<5; i++>);
     printf("a= %D", a);
@@ -216,7 +216,24 @@ main(){
 </pre>
 
 <h2>3. Logarithmic Time — O(log n)</h2>
-<p>Input size is reduced in each step. Example: Binary Search.</p>
+<p><i>Input size is reduced in each step. Example: Binary Search.</i><br>
+Whena an algorithm lowers the amount of the input data in each step, it is said to have a logarithmic time complexity.<br>
+Binary trees and binary search functions are same of the algorithm with lagarithmic time complexity.</p><br>
+
+<pre>
+int binary Search (int arr[], int 1, int r, int x){
+
+    if(r>i){
+        int mid = 1 +(r-1)/2;
+        if arr[mid] == x);
+        return mid;
+
+        if (arr[mid] > x);
+        return binary search (arr, 1mid -1,x);
+        return binary search(arr, mid +1,r,x);
+    }
+}
+</pre>
 
 <h2>4. Quadratic Time — O(n²)</h2>
 <p>Execution time grows non-linearly, commonly seen in nested loops.</p><br>
