@@ -19,7 +19,7 @@ The term <strong>raw data</strong> refers to data in its most basic and unproces
 <li>Each data structure allows data to be stored differently.</li>
 <li>It enables efficient data search and retrieval.</li>
 <li>Specific data structures are chosen to solve specific problems.</li>
-<li>They help manage large amounts of data such as large databases and indexing services like hash tables.</li>
+<li>DS enables the management of  large amounts of data such as large databases and indexing services like hash tables.</li>
 </ul>
 
 <h2><b>Examples</b></h2>
@@ -70,11 +70,25 @@ They are simple to implement because the order is fixed.
 <li>The data type is predefined by the program.</li>
 </ul>
 
+<pre>
+┌─┐ ┌─┐ ┌─┐
+│4│ │8│ │2│
+└─┘ └─┘ └─┘
+ 0   1   2
+</pre>
+
 <h3>Linked List Data Structure</h3>
 <ul>
 <li>Data elements are connected using nodes.</li>
 <li>Each node contains data and the address of the next node.</li>
 </ul>
+
+<pre>
+┌─┬─┐        ┌─┬─┐
+│8│ │        │ │ │
+└─┴─┘        └─┴─┘
+(Head)      (Null)
+</pre>
 
 <h3>Stack Data Structure</h3>
 <ul>
@@ -82,11 +96,32 @@ They are simple to implement because the order is fixed.
 <li>Operations occur at one end called the top.</li>
 </ul>
 
+<pre>
+         Push ↘      ↗  Pop 
+                ┌─┐
+    Top →       │5│
+                └─┘
+                ┌─┐
+                │7│
+                └─┘
+                ┌─┐
+                │4│
+                └─┘
+</pre>
+
 <h3>Queue Data Structure</h3>
 <ul>
 <li>Follows FIFO (First In, First Out) principle.</li>
 <li>Insertion and deletion occur at opposite ends.</li>
-</ul>
+</ul><br>
+
+<pre>
+    Insertion ↘v
+                ┌─┐ ┌─┐ ┌─┐
+                │5│ │7│ │4│
+                └─┘ └─┘ └─┘
+                            ↖ Deletion
+</pre>
 
 <h2>2. Non-Linear Data Structures</h2>
 <p>
@@ -102,6 +137,16 @@ They are organized hierarchically or interconnected.
 <li>Each child has exactly one parent except the root.</li>
 </ul>
 
+<pre>
+             →
+        (8)──────(5)
+         │        │
+      ↓  │        │ ↑      [8 ↘ 9]
+         │        │
+        (2)──────(9)
+             →
+</pre>
+
 <h3>Graph Data Structure</h3>
 <ul>
 <li>Consists of nodes (vertices) and edges.</li>
@@ -110,6 +155,13 @@ They are organized hierarchically or interconnected.
 <li>Can be cyclic or acyclic.</li>
 <li>Can be connected or disconnected.</li>
 </ul><br>
+
+<pre>
+             (9)
+        ↙   /   \   ↘
+           /     \
+        (6)      (5)
+</pre>
 
 <h1 align="center">Importance</h1>
 
