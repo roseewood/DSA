@@ -361,11 +361,22 @@ Total complexity = O(n + 5)
     merge sort (array, mid + 1, end);
     merge sort array, mid, begin, end;
 }
+</pre><br>
 
+<h2>Quick Sort</h2>
 
-
-
-
+<pre>
+void quicksort (int arr[], int low, int high)
+{
+    if (low < high)
+    {
+        int pi = partition (arr, low, high);
+        //seprately sor elements before
+        //partition and after partition
+        quicksort (arr, low, pi, 1);
+        quicksort (arr, pi + 1, high);
+    }
+}
 </pre>
 
 
