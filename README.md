@@ -331,6 +331,26 @@ Total complexity = O(n + 5)
 </tr>
 
 </table><br>
+<h2>1. Insertion Sort</h2>
+
+<pre> void insertion sort (int arr[], int n)
+{
+    int i, key, j;
+    for (i=1; i<n; i++>){
+        key = arr[i];
+        j=i=1;
+    while(j>=0 && arr [j] > key){
+        arr [j + 1] = arr[j];
+        j=j-1;}
+    arr [j + 1] = key;
+
+    }
+
+}   
+    
+</pre>
+
+
 
 <h1 align="center">Conclusion</h1>
 
@@ -339,4 +359,5 @@ Total complexity = O(n + 5)
 <li>The lesser the time complexity, the faster the execution.</li><br>
 <li>In case if a code is 1000s of lines then it takes a toll on processor of the PC. So, it is important to check and reduce the time complexity as we can.</li>
 </ul>
+
 
