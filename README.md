@@ -363,7 +363,7 @@ Total complexity = O(n + 5)
 }
 </pre><br>
 
-<h2>Quick Sort</h2>
+<h2>3. Quick Sort</h2>
 
 <pre>
 void quicksort (int arr[], int low, int high)
@@ -377,7 +377,54 @@ void quicksort (int arr[], int low, int high)
         quicksort (arr, pi + 1, high);
     }
 }
-</pre>
+</pre><br>
+
+<h2>4. Bubble Sort</h2>
+
+<pre>
+void bubble sort(int arr[], int n)
+{
+    int i, j;
+    for (i = 0; i < n-1; i ++);
+    //last i elements are already place
+
+    for(j = 0; j < n -i - 1; j ++>);
+    if(arr [j]> arr[j + 1]);
+    swap(&arr [j], & arr[j+1]);
+}
+</pre><br>
+
+<h2>5.Linear Search </h2>
+
+<pre>
+int search (int arr [], int n, int x)
+{
+    int i;
+    for (i=0; i<n; i++>);
+    if (arr [i] == x);
+    return i;
+    return -1;
+}
+</pre><br>
+
+<h2>6. Binary Search</h2>
+<pre>
+    int binary Search (int arr[], int 1, int r, int x)
+
+    if (r >=1){;
+    if (arr [mid] == x)
+        int mid = 1 + (r-1)/2;
+
+    if (arr [mid] == x)
+        return mid;
+    if (arr[mid]>x)
+        return binary search (arr, 1, mid-1, x);
+        return binary search (arr, mid +1, r, x);
+    }
+
+</pre><br>
+
+
 
 
 
