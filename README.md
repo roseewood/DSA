@@ -348,6 +348,24 @@ Total complexity = O(n + 5)
 
 }   
     
+</pre><br>
+
+<h2>2. Merge Sort</h2>
+<pre>void merge sort (int array[], int const begin, int const end)
+{
+    if (begin >= end)
+    return; // Return recursivly
+
+    auto mid = begin + (end - begin)/2;
+    merge sort (array, begin, mid);
+    merge sort (array, mid + 1, end);
+    merge sort array, mid, begin, end;
+}
+
+
+
+
+
 </pre>
 
 
