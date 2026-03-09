@@ -424,16 +424,38 @@ int search (int arr [], int n, int x)
 
 </pre><br>
 
-
-
-
-
 <h1 align="center">Conclusion</h1>
 
 <ul>
 <li>The time of the execution increases with the type of operations we make using the inputs.</li><br>
 <li>The lesser the time complexity, the faster the execution.</li><br>
 <li>In case if a code is 1000s of lines then it takes a toll on processor of the PC. So, it is important to check and reduce the time complexity as we can.</li>
-</ul>
+</ul><br>
 
+<h1 align="center">Pointers in C</h1>
 
+<p>A pointer is a variable to the address of another variable . If is declared along wiht an asterisk symbol (*).<br>
+The syntax to declare a pointer is as follows:<br></p>
+
+<p align="center"><b>datatype * var 1</b></p>
+
+<p>The syntax to Assign address of a variable to a pointer is:</p>
+
+<p align="center"><b>datatype var1, * var2</b></p><br>
+
+<pre>
+# include <bits/std c++.h>
+using namespace std;
+main()
+{
+    int a = 5, * ptr;
+    ptr = &a;
+    cout << "a =" << a << endl;
+    cout << "a =" << * ptr << endl;
+    return 0;
+}
+</pre>
+
+<p><b>Result</b><br>
+a = 5<br>
+a = 5</p>
