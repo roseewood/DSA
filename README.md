@@ -558,6 +558,40 @@ main()
 
 <b>Result:</b>
 ----------------
-</pre>
+</pre><br>
+
+<h1 align="center">Use Cases</h1>
+<h2 align="center">1. Pointer Arithmetic</h2>
+<p><b>NOTE:</b> Pointer Arithemetic is of no use if not used in Arrays.</p>
+
+<h2>i) Increment (++)</h2>
+<p>We can use this operator to jump from one index to the next insex in an array.</p>
+
+<b>Syntax:</b>
+<p align="center">ptr++</p>
+
+<p align="center">arr[0] -------------> arr[1]-----------> arr[2]     
+</p>
+
+<pre>
+#include <bits/stdc++.h>
+using namespace.std;
+main()
+{
+    int arr [3] = {2,3,5};
+    int *tr;
+    tr = &arr [0];
+    for(int i = 0; i<3; i++)
+    {
+        cout <<* tr<< end l;
+        ++;
+    }
+    return 0;
+}
+
+
+<b>Result:</b>
+2, 3, 5
+</pre><br>
 
 
