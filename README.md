@@ -458,4 +458,106 @@ main()
 
 <p><b>Result</b><br>
 a = 5<br>
-a = 5</p>
+a = 5</p><br>
+
+<h1 align="center">Types of Pointer</h1>
+
+<h2>1. Null Pointer</h2>
+<p>When a null value is assigned to a pointer during its declaration.</p><br>
+
+<pre>
+int *var = NULL;
+
+# include <bits/stdc++.h>
+using namespace std;
+main()
+{
+    int *var;
+    *var = NULL;
+    cout<< *var;
+    return 0;
+}
+
+<b>Result:</b>
+
+---------------
+</pre><br>
+
+<h2>2. Void Pointer</h2>
+<p>When a pointer is declared with a void keyword.<br>
+To print the value we need to typecast this pointer.</p>
+
+<p><b>Syntax:</b></p>
+<p align="center"><i>void *var;</i></p><br>
+
+<pre>
+
+#include <bits/stdc++.h>
+using namespace std;
+main()
+{
+    int a = 5;
+    void *ptr;
+    ptr = &a;
++------------------+
+|   cout << *ptr;  |   -------> ERROR
++------------------+
+    |  return 0;
+    |
+    |
+    |
+    |
+}   |
+    |
+    |
+    |
+<b>Result: </b>
+
+cout<< *(int *) ptr;
+= 5
+ 
+</pre><br>
+
+<h2>3. Wild Pointer</h2>
+<p>It is only declared but not assigned an address of any variable. <br>
+These pointers are very tricky and they may cause segmenatation errors.</p><br>
+
+<pre>
+#include <bits/stdc++.h>
+sung namespace std;
+main()
+{
+    int *ptr;
+    cout<< *ptr;
+    return 0;
+}
+
+
+<b>Result:</b>
+
+---------------
+
+</pre><br>
+
+<h2>4. Dangling Pointer</h2>
+<p>Let's suppose there is a pointer p pointing at a variable at memory 10004. This pointer will point at a deleted variable if we dellocate this memory. <br>
+We deallocate memory using a free () function.</p><br>
+
+<pre>
+#include <bits/stdc++.h>
+using namespace std;
+main()
+{
+    int *ptr = (int *)m alloc(sizeof(int));
+    int a = 5;
+    ptr = &a;
+    free (ptr);
+    cout<< *ptr;
+    return 0;
+}
+
+<b>Result:</b>
+----------------
+</pre>
+
+
