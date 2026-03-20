@@ -685,7 +685,7 @@ main()
 <li>If a <b>p</b> pointer points to and <i>X</i> variable, then we can interchange <i>X</i> with <b>*p</b>.</li>
 </ul><br>
 
-<table>
+<table align ="center">
 <tr>
 <th>Expression</th>
 <th>Equivalent Expression</th>
@@ -711,4 +711,114 @@ main()
 <td>(*p) ++</td>
 </tr>
 
-</table>
+</table><br>
+
+<h2 align="center">2. Pointer to Pointer</h2>
+<p>In this situation, a pointer will indirectly point to a variable via another pointer.</p><br>
+
+<p><b>Syntax: </b></p>
+<p align="center">int **ptr<br><br>
+Pointer 2 ------------> Pointer 1-------------> Variable</p><br>
+
+<pre>
+#include <bits/stdc++.h>;
+using namespace std;
+main()
+{
+    int var, *ptr1, **ptr2;
+    var 5;
+    ptr1  = &var;
+    ptr2 = &ptr1;
+    cout << "var=" << var << endl << "ptr1=" <<*ptr1 << endl <<"ptr2=" <<**ptr2;
+    }
+    return 0;
+}
+
+<b>Result:</b>
+var = 5
+ptr1 = 5
+**ptr = 25
+</pre><br>
+
+
+<h2 align="center">3. Array of Pointer</h2>
+<p>An array of pointer is an array whose every element is a pointer.</p><br>
+
+<p><b>Syntax: </b></p>
+<p align="center">int * arr[n] (where n is size of array)<br><br>
+ptr[0] ------------> ptr[1]-------------> ptr[2]<br>
+a[0] ----------> a[1] ---------->a[2]</p>
+
+<pre>
+#include <bits/stdc++.h>;
+using namespace std;
+main()
+{
+    int a [3] = {2, 3, 5};
+    int *ptr[3];
+    for (int i=0; i<3; i++)
+    {
+        ptr[i] = &a [i];
+    }
+    for (int i = 0; i<3; i ++)
+    {
+    cout << *ptr [i] << endl;
+    }
+    return 0;
+}
+
+</pre><br>
+
+<h2 align="center">4. Call by Value</h2>
+<p>In call by value, we copy the variables values and pass it in function vall as a parameter. If we modify change the value of the actual variable.</p><br>
+
+<p><b>Syntax: </b></p>
+<p align="center">
+Variable A ------------> Variable A (copy)<br><br>
+Variable B ------------> Variable B (copy)</p>
+
+<pre>
+#include <bits/stdc++.h>;
+using namespace std;
+main()
+{
+   int X = 10;
+   func (X);
+   cout << X << endl;
+   return 0;
+}
+{
+    X = 200;
+    cout << "X =" << X << endl;
+    return 0;
+}
+
+</pre><br>
+
+<h2 align="center">5. Call by Reference:</h2>
+<p>In call by reference, we take the variables address and pass it in function called as a parameter.<br>
+If we modify these parameters, then it will change the value of the actual variable as well.</p><br>
+
+<p><b>Syntax: </b></p>
+<p align="center">
+Variable A ------------> (address) Variable A<br><br>
+Variable B ------------> (address) Variable B </p><br>
+
+<pre>
+#include <bits/stdc++.h>;
+using namespace std;
+main()
+{
+   int X = 10;
+   func (&X);
+   cout << "X=" << endl;
+   return 0;
+}
+    void func (int *X)
+{
+    X = 200;
+    cout << "in func function X = " << X << endl;
+    return 0;
+}
+
+</pre><br>
