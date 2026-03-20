@@ -595,3 +595,120 @@ main()
 </pre><br>
 
 
+<h2>ii) Decrement (--)</h2>
+<p>We use this operator to jump from one index to the previous index in an array.</p><br>
+
+<p><b>Syntax: </b></p>
+<p align="center">ptr <sup> --</sup><br><br>
+arr[2] ------------> arr[1] -------------> arr[0]</p><br>
+
+<pre>
+#include <bits/stdc++.h>;
+using namespace std;
+main()
+{
+    int arr[3] = {2,3,5}
+    int *ptr;
+    ptr = & arr[2];
+    for (int i=0; i=3; i++)
+        {cout << *ptr<< endl;
+        ptr<sup>--</sup>;
+    }
+    return 0;
+}
+
+<b>Result:</b>
+5, 3, 2
+</pre><br>
+
+<h2>iii) Integers added to a Pointer:</h2>
+<p>We use this operator to jump from one index to the next index in an array.</p><br>
+
+<p><b>Syntax: </b></p>
+<p align="center">ptr + = i; <i>(where 'i' is an integer) </i> <br>
+arr[0] ------------> arr[2] -------------> arr[4]</p><br>
+
+<pre>
+#include <bits/stdc++.h>;
+using namespace std;
+main()
+{
+    int arr[7] = {2,3,5,7,11,13,17}
+    int *ptr;
+    ptr = & arr[0];
+    int n =2;
+    for (int i=0; i<7>; i++)
+        {cout << *ptr<< endl;
+        ptr + n;
+    }
+    return 0;
+}
+
+<b>Result:</b>
+2, 5, 11, 17, 2
+</pre><br>
+
+<h2>iv) Integers subtracted from a Pointer:</h2>
+<p>We use this operator to jump from one index to the previous index in an array.</p><br>
+
+<p><b>Syntax: </b></p>
+<p align="center">ptr - = i; <i>(where 'i' is an integer) </i> <br>
+arr[2] ------------> arr[2] -------------> arr[0]</p><br>
+
+<pre>
+#include <bits/stdc++.h>;
+using namespace std;
+main()
+{
+    int arr[7] = {2,3,5,7,11,13,17}
+    int *ptr;
+    ptr = & arr[6];
+    int n =2;
+    for (int i=0; i<7>; i++)
+        {cout << *ptr<< endl;
+        ptr - n;
+    }
+    return 0;
+}
+
+<b>Result:</b>
+17, 11, 5, 2
+</pre><br>
+
+
+<h2>(v) Precedence</h2>
+<ul>
+<li>Operators <b>*</b> and <b>&</b> are given the same priorities as unary operators (increment <b>++</b>, decrement <b>--</b>)</li><br>
+
+<li>The unary operators <b>*, &, ++, --</b> are ecaluated from right to left in the same expression.</li><br>
+
+<li>If a <b>p</b> pointer points to and <i>X</i> variable, then we can interchange <i>X</i> with <b>*p</b>.</li>
+</ul><br>
+
+<table>
+<tr>
+<th>Expression</th>
+<th>Equivalent Expression</th>
+</tr>
+<tr>
+<td>Y = X + 1</td>
+<td>Y = *p + 1</td>
+</tr>
+<tr>
+<td>X = X + 10</td>
+<td>*p = *p + 10</td>
+</tr>
+<tr>
+<td>X + = 2</td>
+<td>*p += 2</td>
+</tr>
+<tr>
+<td>++X</td>
+<td>++ *p</td>
+</tr>
+<tr>
+<td>X ++</td>
+<td>(*p) ++</td>
+</tr>
+
+</table>
