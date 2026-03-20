@@ -822,3 +822,35 @@ main()
 }
 
 </pre><br>
+
+<h1 align="center">Advantages</h1>
+
+<ul>
+    <li>Pointers are helpful to access a memory location.</li><br>
+    <li>Pointers are an effective way to access the array structure elements.</li><br>
+    <li>Pointers are used for the allocation of dynamic memory and the distribution.</li><br>
+    <li>Pointers are used to build complecated data structures like a linked list graph, tree etc.</li>
+</ul><br>
+
+
+<h1 align="center">Disadvantages</h1>
+
+<ul>
+    <li>Poointers are a bit difficult to understand.</li><br>
+    <li>Pointers acan cause several errors, such as segmentation errors or unrequired memory access.</li><br>
+    <li>If a pointer has an incorrect value, it may corrupt the memeory.</li><br>
+    <li>Pointers may corrupt the memory.</li><br>
+    <li>The pointers are relatively slower than the variables.
+    </li >
+</ul><br>
+
+
+<h1 align="center">Key Points</h1>
+
+<ul>
+    <li>A pointer is simply a storage location for data in memory.</li><br>
+    <li>Pointers can be used to traverse the array more efficiently.</li><br>
+    <li>We can use function pointers to invoke a function dynamically.</li><br>
+    <li>Pointer arithemetic is the process of performing arithmetic opearations on pointer.</li><br>
+    <li>In an array of pointers, it can point to functions, making it simple to call different functions.</li>
+</ul><br><br>
