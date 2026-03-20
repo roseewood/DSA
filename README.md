@@ -854,3 +854,50 @@ main()
     <li>Pointer arithemetic is the process of performing arithmetic opearations on pointer.</li><br>
     <li>In an array of pointers, it can point to functions, making it simple to call different functions.</li>
 </ul><br><br>
+
+
+<h1 align="center">Arrays</h1>
+
+<h2 align="center">Need of Arrays</h2>
+<p>Ler us imagine that we were supposed keep track of the students marks and also honor them with degrees. If we done this in traditional ways of declaring individual variables for each student, then it would be time-consuming.</p><br>
+
+<p><b>Example:-</b></p>
+<p align="center"><b>Score:</b> 1 2 3 4 5<br>
+<b>Student:</b> 1 2 3 4 5</p>
+
+<p>So, what if there is an option where one variable could do the job of 'n' variables.<br>
+So with a similar approach, the array data structure were designed
+</p><br>
+
+<h2>Arrays</h2>
+<p>An array is a linear data structure that collects elements of same data type and stores them in a contiguous and adjavent memory locations.</p>
+
+<h3 align="center">Memory Representation</h3>
+<p>Let's create an array of five elements.</p>
+<p align ="center">[ A ]&nbsp;&nbsp;&nbsp; [ R ] &nbsp;&nbsp;&nbsp; [ R ]&nbsp;&nbsp;&nbsp; [ A ]&nbsp;&nbsp;&nbsp; [ Y ]</p><br>
+
+<p><b>Note:</b> The element in an array are stored using memory block address and <i>Array Index.</i>
+
+<pre>
+┌─────────┐  ┌────┐ ┌────┐ ┌────┐ ┌────┐ ┌────┐
+│ Address │→ │ 11 │ │ 12 │ │ 13 │ │ 14 │ │ 15 │
+└─────────┘  └────┘ └────┘ └────┘ └────┘ └────┘
+┌────────┐   ┌────┐ ┌────┐ ┌────┐ ┌────┐ ┌────┐
+│ Array  │→  │ A  │ │ R  │ │ R  │ │ A  │ │ Y  │
+└────────┘   └────┘ └────┘ └────┘ └────┘ └────┘
+┌─────────┐  ┌────┐ ┌────┐ ┌────┐ ┌────┐ ┌────┐
+│ Address │→ │ 01 │ │ 02 │ │ 03 │ │ 04 │ │ 05 │
+└─────────┘  └────┘ └────┘ └────┘ └────┘ └────┘
+</pre><br>
+
+<h2 align="center">Types</h2>
+<p><b>i) One Dinemsional Array<br>
+ii) Multidimensional Array<br>
+a) 2D &nbsp;&nbsp;&nbsp; b) 3D<br></b></p><br>
+
+<h2>1. One Dimensional Array</h2>
+<p>It requires only one subscript specify element in array.</p>
+
+<p>Elements --> [ ] [ ] [ ]  [ ]  [ ]  [ ]  [ ] [ ] [ ] [ ]<br>
+Index-------> 0  1  2  3 4 5 6 7 8 9</p>
+
