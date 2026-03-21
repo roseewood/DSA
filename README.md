@@ -898,6 +898,7 @@ a) 2D &nbsp;&nbsp;&nbsp; b) 3D<br></b></p><br>
 <h2>1. One Dimensional Array</h2>
 <p>It requires only one subscript specify element in array.</p>
 
-<p>Elements --> [ ] [ ] [ ]  [ ]  [ ]  [ ]  [ ] [ ] [ ] [ ]<br>
-Index-------> 0  1  2  3 4 5 6 7 8 9</p>
+<p align="center"><b>int marks [10] =</b> {0, 1, 2, 3, 4, 5, 6, 7, 8,9}</p>
+<p><b>Elements-</b> [ ] [ ] [ ]  [ ]  [ ]  [ ]  [ ] [ ] [ ] [ ]<br>
+<b>Index-</b> 0  1  2  3 4 5 6 7 8 9</p>
 
