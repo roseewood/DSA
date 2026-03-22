@@ -938,6 +938,70 @@ a) 2D &nbsp;&nbsp;&nbsp; b) 3D<br></b></p><br>
  1  │   │   │   │                    1  │   │   │   │
     └───┴───┴───┘                       └───┴───┴───┘   
 
-</pre>
+</pre><br>
+
+
+<h2 align="center">Declearation</h2>
+
+<p align="center">Syntax: &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <b>datatype array_name[array_size];</b><br>
+
+<b>For Example:-</b> <i> An array of integer can be declared as follows.</i>
+</p>
+
+
+
+<pre>
+
+<p><b>int(example) [6];</b></p>
+
+┌───┐   ┌───┐   ┌───┐   ┌───┐   ┌───┐   ┌───┐
+│   │   │   │   │   │   │   │   │   │   │   │
+└───┘   └───┘   └───┘   └───┘   └───┘   └───┘
+  0       1       2       3       4       5
+</pre><br>
+
+<p>Compiler will allocate a contiguous memory block okf size = 6 * sizeof (int)</p><br>
+
+<h2 align="center">Initialization</h2>
+
+<table align ="center">
+<tr>
+<td><b>Method 1</b></td>
+<td>int a [5] = {1, 2,3,4,5};</td>
+<td>a = [1][2][3][4][5]<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0 &nbsp;1 &nbsp;2 &nbsp;3 &nbsp;4</td>
+</tr>
+
+
+<tr>
+<td><b>Method 2</b></td>
+<td>int a [ ] = {1,2,3,4,5};</td>
+<td>a = [1][2][3][4][5]<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0 &nbsp;1 &nbsp;2 &nbsp;3 &nbsp;4</td>
+</tr>
+
+<tr>
+<td><b>Method 3</b></td>
+<td>int a [5];<br>
+a [0] = 1;<br>
+a [1] = 2;<br>
+a [2] = 3;<br>
+a [3] = 4;<br>
+a [4] = 5;<br>
+</td>
+<td>a = [1][2][3][4][5]<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0 &nbsp;1 &nbsp;2 &nbsp;3 &nbsp;4</td>
+</tr>
+
+<tr>
+<td><b>Method 4</b></td>
+<td>int a [5]<br>
+for( i = 0; i < 5; i ++>)<br>
+    {scanf ("%d", a[i]);<br>
+}
+</td>
+<td>a = [1][2][3][4][5]<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0 &nbsp;1 &nbsp;2 &nbsp;3 &nbsp;4</td>
+</tr>
+
+</table><br>
+
+
 
 
