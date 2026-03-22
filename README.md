@@ -941,7 +941,7 @@ a) 2D &nbsp;&nbsp;&nbsp; b) 3D<br></b></p><br>
 </pre><br>
 
 
-<h2 align="center">Declearation</h2>
+<h2 align="center">Declearation of Arrays</h2>
 
 <p align="center">Syntax: &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <b>datatype array_name[array_size];</b><br>
 
@@ -962,7 +962,7 @@ a) 2D &nbsp;&nbsp;&nbsp; b) 3D<br></b></p><br>
 
 <p>Compiler will allocate a contiguous memory block okf size = 6 * sizeof (int)</p><br>
 
-<h2 align="center">Initialization</h2>
+<h2 align="center">Initialization of Arrays</h2>
 
 <table align ="center">
 <tr>
@@ -1001,6 +1001,52 @@ for( i = 0; i < 5; i ++>)<br>
 </tr>
 
 </table><br>
+
+<h2 align="center">Accessing Elements of Array</h2>
+
+<p><b>To access an array elements:</b>&nbsp;&nbsp;&nbsp;name_of_array[sizeofarray];</p>
+
+
+<pre>
+
+<b>int xyz[5];</b>
+
+┌───┐  ┌───┐  ┌───┐  ┌───┐  ┌───┐   
+└───┘  └───┘  └───┘  └───┘  └───┘   
+  0      1      2      3      4
+</pre><br>
+
+<ul>
+<li>Accessing the first element in an array can be done using the first index.<br>
+<b>e.g. xyz [0]</b></li>
+<li>Accessing the second element in an array can be done using the second index.<br>
+<b>e.g. xyz [1]</b> and so on.</li>
+
+</ul><br>
+
+<h1 align="center">Advantages</h1>
+
+<ul>
+<li>Arrays stores multiple elemlents of same type with the same name.</li>
+<li> Elements in an array can access randomly using an index number.</li>
+<li>Array memory is predefined, so there is no extra memory loss.</li>
+<li>They avoid memory loss.</li>
+<li>2D arrays can represent the tabular data.</li>
+</ul>
+<br>
+
+<h1 align="center">Disadvantages</h1>
+
+<ul>
+<li>The no. of elements in an array should be pre-defined.</li>
+<li>It is static in nature , it's size cannot be varied after declaration.</li>
+<li>Allocating excess memory than required may lead to memory wastage.</li>
+<li>Insertion and deletion opearation in an array is quite difficult as array stores elements in contuous form.</li>
+
+</ul><br>
+
+
+
 
 
 
