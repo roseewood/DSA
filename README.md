@@ -1045,6 +1045,36 @@ for( i = 0; i < 5; i ++>)<br>
 
 </ul><br>
 
+<h1>Two Dimensional Arrays</h1>
+
+<ul>
+<li>These array are called arrays of arrays.</li>
+<li>It is created to execute relational database which is like data structure.</li>
+<li>These arrays organised as matrices which are the colleection of rows and columns.</li>
+<li>It consists rows and columns.</li>
+</ul>
+
+<h3 align="center">Need of 2-D Arrays</h3>
+<ul>
+<li>The main advantage of this is grouping of elements.</li></ul>
+<p><b>For Example: </b> Consider we have a class consisting four students-
+Each student consists of three subjejctjs namely <i>English, Science, and Mathematics</i>.And we want to represent marks of each student.</p><br>
+
+<pre>
+                    Students
+                  1   2   3   4
+                ┌───┬───┬───┬───┐
+    English     │70 │90 │80 │75 │
+                ├───┼───┼───┼───┤
+    Science     │65 │75 │60 │55 │
+                ├───┼───┼───┼───┤
+    Maths       │50 │65 │75 │80 │
+                └───┴───┴───┴───┘
+
+<i>So, the above table represents whole class marks.</i>
+</pre><br>
+
+
 
 
 
