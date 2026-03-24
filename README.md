@@ -1028,12 +1028,14 @@ for( i = 0; i < 5; i ++>)<br>
 
 <h2>Traversal</h2><br>
 <ul>
-<li>TRaversal in an array is a process of visiting each elements once.</li>
-<li>It can be don eby various mean.</li>
-<li>Counting the array elements.</li>
-<li>Printing the values stored in an arrays</li>
-<li>Sum of elelmelntls present in an arrays and many more.</li>
-</ul><br>
+<li>Traversal in an array is a process of visiting each elements once.</li>
+<li>It can be done by various means.</li>
+</ul>
+<p>
+<b>i)</b> Counting the array elements.<br>
+<b>ii)</b> Printing the values stored in an arrays.<br>
+<b>iii)</b> Sum of elements present in an arrays and many more.<br>
+</p><br>
 
 <pre>
 
@@ -1042,6 +1044,29 @@ for( i = 0; i < 5; i ++>)<br>
 │10 │   │20 │   │30 │   │40 │   │50 │  
 └───┘   └───┘   └───┘   └───┘   └───┘  
 
+</pre><br>
+
+<h2>Insertion</h2><br>
+<ul>
+<li>Insertion in an array is the process of including one or more elements in an array</li>
+<li>Insertion of elements can be done:</li>
+</ul><br>
+<p>
+<b>i)</b> At the begining,<br>
+<b>ii)</b> At the end, and<br>
+<b>iii)</b> At any given index of an Array
+</p><br>
+
+<pre>
+
+┌───┐   ┌───┐   ┌───┐   ┌───┐   ┌───┐  ┌───┐                  
+│10 │   │20 │   │30 │   │50 │   │60 │  |   |
+└───┘   └───┘   └───┘   └───┘   └───┘  └───┘     
+                          |____↗  |____↗        
+
+                ┌───┐
+                |40 |
+                └───┘
 </pre><br>
 
 
