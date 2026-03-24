@@ -1069,6 +1069,17 @@ for( i = 0; i < 5; i ++>)<br>
                 └───┘
 </pre><br>
 
+<h2>Deletion</h2><br>
+<ul>
+<li>Deletion of an element is the process of removing the desired elements and re-organize it. </li>
+<li>Deletion of elements can be done by different way:</li>
+</ul><br>
+<p>
+<b>i)</b> From the begining,<br>
+<b>ii)</b> From the end, and<br>
+<b>iii)</b> From any given index
+</p><br>
+
 
 <h1 align="center">Advantages</h1>
 
