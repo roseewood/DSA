@@ -1024,6 +1024,27 @@ for( i = 0; i < 5; i ++>)<br>
 
 </ul><br>
 
+<h1 align="center">Operation on Array Elements</h1>
+
+<h2>Traversal</h2><br>
+<ul>
+<li>TRaversal in an array is a process of visiting each elements once.</li>
+<li>It can be don eby various mean.</li>
+<li>Counting the array elements.</li>
+<li>Printing the values stored in an arrays</li>
+<li>Sum of elelmelntls present in an arrays and many more.</li>
+</ul><br>
+
+<pre>
+
+  ↓       ↓       ↓       ↓       ↓
+┌───┐   ┌───┐   ┌───┐   ┌───┐   ┌───┐  
+│10 │   │20 │   │30 │   │40 │   │50 │  
+└───┘   └───┘   └───┘   └───┘   └───┘  
+
+</pre><br>
+
+
 <h1 align="center">Advantages</h1>
 
 <ul>
