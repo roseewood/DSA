@@ -1309,8 +1309,196 @@ int main()
 9 6 1 144 70 10 12 78
 </pre><br>
 
+
+
 <h1>Three Dimensional Arrays</h1>
 
+<ul>
+<li>These arrays are called <b>arrays of arrays of arrays</b>.</li>
+<li>It is an extension of 2-D arrays and is used to represent <b>3D data structures</b>.</li>
+<li>These arrays are organized as <b>layers, rows, and columns</b>.</li>
+<li>It consists of <b>depth (layer), rows, and columns</b>.</li>
+</ul>
+
+<h3 align="center">Need of 3-D Arrays</h3>
+<ul>
+<li>The main advantage is storing complex data like <b>3D matrices, images, or multiple tables</b>.</li>
+</ul>
+
+<p><b>For Example:</b> Consider a school where we store marks of students for different classes.<br>
+Each class has students and each student has marks in subjects like <i>English, Science, Maths</i>.</p>
+
+<pre>
+              Layer 0 (Class 1)
+
+        ┌───────────────┐
+        │ 70  90  80    │
+        │ 65  75  60    │
+        │ 50  65  75    │
+        └───────────────┘
+
+              Layer 1 (Class 2)
+
+        ┌───────────────┐
+        │ 75  85  95    │
+        │ 60  70  80    │
+        │ 55  65  75    │
+        └───────────────┘
+
+<i>Each box is a 2-D array, and multiple such boxes form a 3-D array.</i>
+</pre>
+
+<h3>Syntax:</h3>
+
+<p align="center">
+<b>data_type name_of_array[D][R][C];</b><br>
+<i>D → Depth (Layers), R → Rows, C → Columns</i>
+</p>
+
+<p><b>Note:</b> <i>Columns must always be specified.</i></p>
+
+<p align="center">
+<b>e.g</b><br>
+int arr[2][3][3];<br>
+float data[4][2][5];
+</p>
+
+<br>
+
+<h2 align="center">Visualizing</h2>
+
+<p>It is a collection of <b>multiple 2-D arrays (layers)</b>.</p>
+
+<pre>
+<p align="center"><b>int array[2][3][3];</b></p>
+
+Layer 0                    Layer 1
+┌───────────┐            ┌───────────┐
+│           │            │           │
+│   3x3     │            │   3x3     │
+│  Matrix   │            │  Matrix   │
+│           │            │           │
+└───────────┘            └───────────┘
+
+Total Elements = 2 × 3 × 3 = 18
+</pre>
+
+<br>
+
+<h2 align="center">Initialization</h2>
+
+<h3>1. First Method</h3>
+
+<pre>
+<p align="center">
+<b>
+int first[2][3][3] = {
+  9,6,1, 144,70,50, 10,12,78,
+  5,4,3, 20,30,40, 11,22,33
+};
+</b>
+</p>
+
+<i>Values are filled layer by layer.</i>
+</pre>
+
+<h3>2. Second Method</h3>
+
+<pre>
+<p>
+<b>
+int second[2][3][3] = {
+    {
+        {9,6,1},
+        {144,70,50},
+        {10,12,78}
+    },
+    {
+        {5,4,3},
+        {20,30,40},
+        {11,22,33}
+    }
+};
+</b>
+</p>
+
+<i>This method is more readable and preferred.</i>
+</pre>
+
+<br>
+
+<h2 align="center">Accessing Elements</h2>
+
+<pre>
+<p align="center"><b>int first[2][3][3]</b></p>
+
+Access format:
+first[layer][row][column]
+
+Example:
+first[0][0][0] = 9
+first[0][1][2] = 50
+first[1][2][1] = 22
+</pre>
+
+<br>
+
+<h2 align="center">Traversal (Print)</h2>
+
+<pre>
+<b>#include &lt;stdio.h&gt;
+
+int main()
+{
+    int first[2][3][3] = {
+        { {9,6,1}, {144,70,50}, {10,12,78} },
+        { {5,4,3}, {20,30,40}, {11,22,33} }
+    };
+
+    int i,j,k;
+
+    for(i=0; i&lt;2; i++)
+    {
+        printf("Layer %d:\n", i);
+
+        for(j=0; j&lt;3; j++)
+        {
+            for(k=0; k&lt;3; k++)
+            {
+                printf("%d ", first[i][j][k]);
+            }
+            printf("\n");
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+</b>
+
+<b>Output:</b>
+
+Layer 0:
+9 6 1
+144 70 50
+10 12 78
+
+Layer 1:
+5 4 3
+20 30 40
+11 22 33
+</pre>
+
+<br>
+
+<h2 align="center">Key Points</h2>
+
+<ul>
+<li>3-D arrays store data in <b>layers (depth)</b>.</li>
+<li>Indexing starts from <b>0</b>.</li>
+<li>Total elements = <b>D × R × C</b>.</li>
+<li>Used in <b>graphics, games, simulations</b>.</li>
+</ul><br>
 
 
 
